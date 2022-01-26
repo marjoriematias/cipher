@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: gray;
+    color: khaki;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: lightgray;
+    color: khaki;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #000;
+    padding: 3px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-name-sender, .input-name-receiver {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input-message-encode {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.button-submit-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+form input, form textarea {
+    outline: unset;  
+    padding: 20px;
+    width: 300px;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+}
+
+form input:focus, form textarea:focus {
+    background-color: lightgrey;
+}
+
+form input[type-submit] {
+    background-color: lightcoral;
+    color: black;
+    cursor: pointer;
+}
+
+form label {
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
