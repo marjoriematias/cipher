@@ -1,6 +1,49 @@
 export default cipher
+// Primeira frase
 
-const cifraDeCesarCriptografar = (frase, deslocamento) => {};
+const cifraDeCesarCriptografar = (frase, deslocamento) => {
+  const tamanhoFrase = frase.lenght;
+  const alfabeto = alfabeto();
+  let frasePronta = '';
+
+  for(var i = 0; i < tamanhoFrase; i++) {
+    const letra = frase[i];
+    if(letra === '') {
+      frasePronta = `${frasePronta}`;  
+      } else {
+        for (var [key, value] of alfabeto) {
+          if (value === _.toLower(letra)) {  
+            if (deslocamento + key > 26) {
+              let controle = true; 
+              let contador = 1;
+
+              while (controle) {
+              novoDicionario = new map();
+              for (var [key2, value] of alfabeto) {
+                key2 = key2 + contador * 26;
+                novoDicionario.set(key2, value);
+              }
+
+              if(novoDicionario.get(deslocamento + key)) {
+                frasePronta = `${frasePronta}${novoDicionario.get(deslocamento + key)}`;
+                controle = false;
+              }
+              
+              contador += 1;
+              
+              } 
+              } else {
+            frasePronta = `${frasePronta}${alfabeto.get(deslocamento + key)}`;
+          
+          
+          }
+        }
+      }
+    }
+  return frasePronta;
+} 
+
+console.log(frasePronta);
 
 const cifraDeCesarDescriptografar = (frase, deslocamento) => {};
 
@@ -40,4 +83,3 @@ module.exports = {
   cifraDeCesarCriptografar,
   cifraDeCesarDescriptografar,
 };
-

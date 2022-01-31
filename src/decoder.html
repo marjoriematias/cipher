@@ -3,36 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Lora & display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script src="./cipher.js"></script>
   </head>
-  <body>
-    <div id="root">
+
+  <body class="gradient">
       <header>
         <h1>Caesar Cipher</h1>
-        <nav>
-          <a>Codificar</a>
-          <a>Decodificar</a>
-        </nav>
       </header>
+      
+      <div class="navbar">
+        <a href="./index.html">Criptografar</a>
+        <a href="./decoder.html">Descriptografar</a>
+      </div>
+
+      <div class="divider">
+        <hr>
+      </div>
+
       <section>
         <form>
           <div class="input-name-sender">
             <label>De:</label>
             <input type="text" placeholder="Digite seu nome" name="nome" required/> 
           </div>
+
           <div class="input-name-receiver">
             <label>Para:</label>
-            <input type="text" placeholder="Enviar para ..." name="nome" required/> 
+            <input type="text" placeholder="Enviar para" name="nome" required/> 
           </div>
+
           <div class="input-message-encode">
             <label>Descriptografar a mensagem:</label>
-            <textarea name="Mensagem" id="" cols="30" rows="10" required></textarea>
+            <textarea id="Digite sua mensagem" placeholder="Digite sua mensagem" class="textarea" name="description" required></textarea>
           </div>
+
           <div class="button-submit-form">
             <input type="submit" value="Enviar">
           </div>
+
+          <div>
+            <label>A mensagem foi descriptografada:</label>
+            <textarea id="description" placeholder="Resultado" class="textarea" name="description" required></textarea>
+          </div>
         </form>
       </section>
-    </div>
-</body>
+  </body>
 </html>
+
