@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Lora', serif;
+}
+
+/* Degradê, transições de cores e elementos */
+.gradient {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #DDDDDD, #222831, #30475E, #F05454);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+/* Defini os pontos de início e fim da transição suave entre imagens "quadros" */
+@keyframes colors {
+    0% {    
+    background-position: 0% 50%;
+
+}
+
+    50% {
+        background-position: 100% 50%;
+
+}
+
+    100% {
+        background-position: 0% 50%;
+
+}
+}
+
+/* Representa um grupo introdutório ou navegacional */
+header {
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 40px;
+    height: 50px;
+    text-align: center;
+    color: #DDDDDD;
+}
+
+/* Codificar e Decodificar, é a construção de um sistema de navegação responsivo,para facilitar a implementação da navegação do site */
+.navbar {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 7px;
+}
+
+/* Link do codificar e decodificar, configurar diferentes formas de apresentação do menu, como escolher entre o posicionamento lateral ou superior, e definir a forma de exibição, que pode ser estendida ou contraída */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: 280ms;
+}
+
+/* Codificar e decodificar, quando o usuário designa um elemento com um dispositivo apontador, quando passar o mouse em cima ou clicar ele ira mudar o estilo do input */
+.navbar a:hover {
+    font-size: 24px;
+    color: white;
+    margin: 0px auto;
+}
+
+/* Linha divisória, uma linha horizontal, separando elementos horizontalmente */
+.divider hr {
+    border-top: 1px solid lightgray;
+    width: 30%;
+    margin: 5px auto;
+    display: block;
+}
+
+/* Seção genérica contida no documento */
+section {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+/* Customizando o formulário */
+form {
+    display: block;
+    height: 800px;
+    width: 600px;
+    padding: 15px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+/* Elementos do formulário e os valores, Digite seu nome e Enviar para */
+form input {
+    outline: unset;  
+    width: 100%;
+    height: 50px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Elementos do campo criptografar e resultado, valores */
+textarea {
+    outline: unset;  
+    width: 100%;
+    height: 200px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Caixa de texto */
+form input:focus, form textarea:focus {
+    background-color: whitesmoke;
+}
+
+/* Div do botão de enviar */
+.criptografar-botao {
+    display: flex;
+    margin: 0px 200px;
+}
+
+/* Começo Botão Enviar */
+.criptografar-botao button {
+    background-color: #222831;
+    color: black;
+    cursor: pointer;
+    transition: 280ms;
+    margin: 10px 0 10px 0;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #FFFF;
+}
+
+.criptografar-botao button:hover { 
+    background-color: #30475E;
+    /* color: black; */
+    cursor: pointer;
+}
+/* Final Botão Enviar */
+
+/* Preenchimento De:, Para:, Criptografar a mensagem: e Resultado */
+form label { 
+    margin-bottom: 5px;
+}
+
+/* Div seleção */
+.select {
+    background-color: white;
+    color: black;
+    appearance: none;
+}
